@@ -1,0 +1,56 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: wheat;
+    color: grey;
+    
+
+}
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: darkslategray;
+}
+
+p {
+    
+    width: 35%;
+    font-size: 75%;
+    margin-bottom: 5px;
+
+}
+
+
+
+.about-img {
+    display: block;
+    margin: 0 auto;
+    border-style: double;
+    border-color: sandybrown;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   
+    
+}
+
+.index-list {
+    padding-top: 2.5%;
+    text-align: center;
+    list-style: none;
+    
+    
+}
+
+.index-list li {
+    padding: 0.5%;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+}
+
