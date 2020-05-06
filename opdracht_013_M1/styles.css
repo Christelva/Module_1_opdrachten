@@ -1,0 +1,109 @@
+.container > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: blue;
+    
+
+}
+.container {
+    height:100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 500px 200px 50px;;
+}
+
+
+.site-header {
+    background-color: red;
+  
+}
+
+.site-main {
+    background-color: pink;
+  
+}
+
+.widget-area {
+    background-color: purple;
+    
+}
+
+.site-footer {
+    background-color: mediumspringgreen;
+    
+}
+
+@media (min-width: 1024px) {
+    .container {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat (12, 1fr);
+        grid-template-rows: 500px auto auto 200px;}
+
+    .site-header {
+            background-color: red;
+            grid-column: 1/ 2;
+            grid-row: 1/12;
+          
+        }
+        
+        .site-main {
+            background-color: pink;
+            grid-column: 2/ 12;
+            grid-row: 1/4
+          
+        }
+        
+        .widget-area {
+            background-color: purple;
+            grid-column: 2/ 12;
+            grid-row: 4/10;
+            
+        }
+        
+        .site-footer {
+            background-color: mediumspringgreen;
+            grid-column: 2/12;
+            grid-row: 10/12;
+            
+        }
+}
+
+@media (min-width: 1250px) {
+    .container {
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat (5, 1fr);
+        grid-template-rows: 500px auto auto 200px;}
+
+    .site-header {
+            background-color: red;
+            grid-column: 1/ 2;
+            grid-row: 1/12;
+          
+        }
+        
+        .site-main {
+            background-color: pink;
+            grid-column: 2/ 11;
+            grid-row: 1/11
+          
+        }
+        
+        .widget-area {
+            background-color: purple;
+            grid-column: 11/ 12;
+            grid-row: 1/12;
+            
+        }
+        
+        .site-footer {
+            background-color: mediumspringgreen;
+            grid-column: 2/11;
+            grid-row: 10/12;
+            
+        }
+}
