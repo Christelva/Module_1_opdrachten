@@ -1,0 +1,197 @@
+* {
+    color: grey;
+    font-size:95%;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    line-height: 1;
+}
+h1 {
+    font-family: 'Oswald', sans-serif;;
+}
+
+.container > div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+ 
+ 
+}
+
+.container {
+    display: flex;
+    height:100%;
+    display: grid;
+    grid-template-columns: repeat (8, 1fr);
+    grid-template-rows: 100px auto auto;
+    grid-template-areas:
+    "h h h h h h h h"
+    "m m m m m m m m"
+    "m m m m m m m m"
+    "m m m m m m m m"
+    "f f f f f f f f";
+}  
+
+ul {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+ul li a{
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li a:hover {
+   
+    color: #9BB8A3;
+    text-shadow: 1px 1px grey;
+}
+
+.site-header {
+    background-color:#D2F0DA;
+    grid-area: h;
+}
+.site-header h1 {
+    padding-left: 50px;
+}
+
+.text-block{
+    background-color: rgb(213, 235, 193);
+    padding: 20%;
+}
+.text-block h1 {
+    font-size: 140%;
+    text-align: center;
+}
+.text-block p {
+    padding: 5px;
+  
+}
+.site-main {
+    background-color: lightgoldenrodyellow;
+   grid-area: m;
+   padding: 15%;
+   color: purple;
+}
+
+.photoalbum {
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.photo-home{
+    padding: 5px;
+    width: 150px;
+    border: solid white;
+}
+
+.photo{
+    width: 255px;
+    border: 8px solid white;
+    background-color: green;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+
+.site-footer {
+    background-color: #9BB8A3;
+    grid-area: f;
+    padding: 5%;   
+}
+
+footer ul li a:hover{
+   
+        color: #D2F0DA;
+        text-shadow: 1px 1px grey;
+}
+    .photoalbum{
+        margin-left: 70px;
+}
+@media (min-width: 1024px) {
+    *{
+        font-size: 110%;
+    }
+    
+    .text-block {
+        padding: 5% 10% ;
+    }
+    .site-header h1{
+        margin-right: 250px;
+       
+    }
+    ul li a{    
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .text-block p {
+        line-height: 40px;
+    }
+
+    .text-block h1 {
+        font-size: 180%;
+        text-align: center;
+    }
+        
+        .photo-home{
+            margin-left: 150px;
+            padding: 5px;
+            width: 300px;
+            border: solid white;
+        }
+    
+}
+
+@media (min-width: 1350px) {
+        *{
+            font-size: 110%;
+        }
+        
+        .text-block {
+            padding: 5% 10% ;
+        }
+        .site-header h1{
+            font-size: 120%;
+            margin-right: 600px;
+           
+        }
+        ul li a{    
+            font-size: 60%;
+            font-weight: bold;
+        }
+        .text-block p {
+            line-height: 40px;
+        }
+    
+        .text-block h1 {
+            font-size:210%;
+            text-align: center;
+        }
+            
+            .photo-home{
+                margin-left: 250px;
+                padding: 5px;
+                width: 300px;
+                border: solid white;
+            }
+        
+    }
